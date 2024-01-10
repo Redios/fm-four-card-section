@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Help request form</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Scada:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">Support request</h1>
+    </header>
+    <main>
+        <div class="form-wrapper">
+        <p id="description">The more details you will provide, the faster we will be able to help</p>
+        <form action="#" id="survey-form">
+            <div class="rowForm">
+                <div class="label-form">
+                    <label for="name" id="name-label">* Name</label>
+                </div>
+                <div class="rightCol-form">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" class="input-form" required>
+                </div>
+            </div>
+            <div class="rowForm">
+                <div class="label-form">
+                    <label for="email" id="email-label">* Email</label>
+                </div>
+                <div class="rightCol-form">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="input-form" required>
+                </div>
+            </div>
+            <div class="rowForm">
+                <div class="label-form">
+                    <label for="number" id="number-label">* Order ID</label>
+                </div>
+                <div class="rightCol-form">
+                    <input type="number" id="number" min="1000" max="999999" name="Order ID" placeholder="Order ID" class="input-form" required>
+                </div>
+            </div>
+            <div class="rowForm">
+                <div class="label-form">
+                    <label for="dropdown" id="dropdown-label">Do you agree to provide access to backend of your CMS?</label>
+                </div>
+                <div class="rightCol-form">
+                    <select id="dropdown" name="currentPos" class="dropdown">
+                        <option disabled value>Select an option</option>
+                        <option value="Agree">Agree</option>
+                        <option value="Disagree">Disagree</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowForm">
+                <div class="label-form">
+                    <label for="product-radio-buttons">Which product you write us about?</label>
+                </div>
+                <div class="rightCol-form">
+                        <ul class="ul-radio">
+                            <li class="clear-radio-type">
+                                <label>
+                                    <input name="product-radio-buttons" value="1" type="radio" class="product-radio-button">
+                                    My parcel
+                                </label>
+                            </li>
+                            <li class="clear-radio-type">
+                                <label>
+                                    <input name="product-radio-buttons" value="2" type="radio" class="product-radio-button">
+                                    Barcode
+                                </label>
+                            </li>
+                            <li class="clear-radio-type">
+                                <label>
+                                    <input name="product-radio-buttons" value="3" type="radio" class="product-radio-button">
+                                    Apiship calc
+                                </label>
+                            </li>
+                            <li class="clear-radio-type">
+                                <label>
+                                    <input name="product-radio-buttons" value="4" type="radio" class="product-radio-button">
+                                    Apiship sender
+                                </label>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="rowForm">
+                <div class="label-form">
+                    What you need us to do?
+                </div>
+                <div class="rightCol-form">
+                    <ul class="ul-check">
+                        <li class="checkbox">
+                            <label>
+                                <input name="type-of-request" value="1" type="checkbox" class="request-checkbox">
+                                I need your help with installation
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input name="type-of-request" value="2" type="checkbox" class="request-checkbox">
+                                I've encountered an error / bug
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input name="type-of-request" value="3" type="checkbox" class="request-checkbox">
+                                Consultation
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input name="type-of-request" value="4" type="checkbox" class="request-checkbox">
+                                Feedback
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input name="type-of-request" value="5" type="checkbox" class="request-checkbox">
+                                Quote for custom development
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input name="type-of-request" value="6" type="checkbox" class="request-checkbox">
+                                Complaint
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowForm">
+                <div class="label-form">
+                    Explain in details your request
+                </div>
+                <div class="rightCol-form">
+                    <textarea name="main-text" id="main-text" cols="30" rows="10" class="input-form resize-textbox" placeholder="Enter your request here"></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
