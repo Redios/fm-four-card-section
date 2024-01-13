@@ -1,0 +1,26 @@
+body {
+    background-color: #000;
+  }
+
+  .box {
+    width: 400px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    background-clip: padding-box;
+  }
+  .box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      margin: -5px;
+      background: linear-gradient(to right, cornflowerblue, #bada55);
+  }
