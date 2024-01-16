@@ -82,7 +82,7 @@ section .card-wrapper .card .text-box {
 section .card-wrapper .card .text-box div {
     transform-style: preserve-3d;
     padding: 0.7em;
-    background: linear-gradient(45deg, #750f68, #9d26a8);
+    background: linear-gradient(45deg, #1c2c33 15%, #5b8fa7 65%, #75b9d8 100%);
     transform: translateZ(100px);
     border-radius: 0.5em;
 }
