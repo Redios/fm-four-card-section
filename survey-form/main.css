@@ -1,0 +1,81 @@
+body {
+    font-family: Scada, sans-serif;
+    text-align: center;
+    background: rgb(173,241,255);
+    background: linear-gradient(90deg, rgba(173,241,255,0.4) 0%, rgba(122,198,244,0.6) 50%, rgba(173,241,255,0.6) 100%);
+}
+
+ul.ul-radio, .ul-check {
+    list-style: none;
+}
+.form-wrapper {
+    background-color: rgb(250, 250, 250);
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 20px;
+}
+
+.rowForm {
+    display: block;
+}
+
+.label-form {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.rightCol-form {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+.input-form {
+    height: 20px;
+    width: 90%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+}
+.dropdown {
+    height: 35px;
+    width: 90%;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+}
+.clear-radio-type, .checkbox {
+    display: block;
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+.resize-textbox {
+    height: 150px;
+    resize: vertical;
+}
+#submit {
+    background-color: #59ace0;
+    border-radius: 6px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+}
+
+@media (max-width: 768px) {
+    .form-wrapper {
+        display: flex;
+    }
+}
