@@ -32,3 +32,70 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+    color: var(--main-white)
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+/* navbar styling */
+
+nav#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-red);
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+ul.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+li {
+    display: inline;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+.nav-list a:hover {
+    background-color: var(--main-blue);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
