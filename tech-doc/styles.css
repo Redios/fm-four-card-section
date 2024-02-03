@@ -45,6 +45,7 @@ header {
     border-left: 10px solid rgba(66, 170, 255, 0.63);
     transition: border-left ease-in 0.2s;
 }
+
 p {
     padding-left: 10px;
 }
