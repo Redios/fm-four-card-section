@@ -10,7 +10,56 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     margin: 0;
+    background-image:url(glass-bg.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.login-form {
+    background: rgba(54, 42, 26, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    padding: 30px;
+    border-radius: 1rem;
+    backdrop-filter: blur(1.7rem);
+    text-align: center;
+    color: #fff;
+    width: 400px;
+    box-shadow: 0px 0px 14px 8px rgba(0, 0, 0, 0.15);
+}
+
+.login-h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.label {
+    margin-block: 20px;
+}
+
+.label input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.12);
+    border: none;
+    padding: 12px 12px 12px 45px;
+    border-radius: 4rem;
+    outline: 3px solid transparent;
+}
+
+.label input::placeholder {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.label i {
+    border: solid;
+    position: absolute;
+    left: 40px;
+    top: 46%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
 }
