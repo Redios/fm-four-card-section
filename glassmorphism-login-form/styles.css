@@ -37,6 +37,7 @@ body {
 
 .label {
     margin-block: 20px;
+    position: relative;
 }
 
 .label input {
@@ -46,6 +47,10 @@ body {
     padding: 12px 12px 12px 45px;
     border-radius: 4rem;
     outline: 3px solid transparent;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255);
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 .label input::placeholder {
@@ -54,11 +59,14 @@ body {
     font-weight: 500;
 }
 
+.label input:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.4);
+}
+
 .label i {
-    border: solid;
     position: absolute;
-    left: 40px;
-    top: 46%;
+    left: 12px;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
     color: rgba(255, 255, 255, 0.9);
